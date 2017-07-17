@@ -10,7 +10,6 @@ using System.Net;
 using System.Net.Sockets;
 using Android.Graphics;
 using System.Threading.Tasks;
-
 namespace ITScheduleViewer
 {
     [Activity(Label = "IT Schedule", MainLauncher = true, Theme = "@android:style/Theme.NoTitleBar")]
@@ -19,9 +18,13 @@ namespace ITScheduleViewer
         static ProgressBar progressBar;
         protected override void OnCreate(Bundle bundle)
         {
-            base.OnCreate(bundle);
-            
-            // Set our view from the "main" layout resource
+            //base.OnCreate(bundle);
+            //AdView mAdView = FindViewById<AdView>(Resource.Id.adView);
+            //var adRequest = new AdRequest.Builder().Build();
+           
+            //// Start loading the ad.
+            //mAdView.LoadAd(adRequest);
+            //Set our view from the "main" layout resource
             RequestWindowFeature(WindowFeatures.NoTitle);
             SetContentView(Resource.Layout.Main);
 
@@ -30,7 +33,7 @@ namespace ITScheduleViewer
             // Use subclassed WebViewClient to intercept hybrid native calls
             webView.SetWebViewClient(new HybridWebViewClient());
             progressBar.Visibility = ViewStates.Visible;
-   
+
             var url = "http://121.96.88.16:5132/MedexWebApps/ITSched";
 
             if (Ping("10.23.234.9", 5132))
