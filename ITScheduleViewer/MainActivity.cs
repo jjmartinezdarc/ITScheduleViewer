@@ -1,32 +1,37 @@
 ﻿using System;
+
 using Android.App;
 using Android.Content;
 using Android.Runtime;
 using Android.Views;
-using Android.Webkit;
 using Android.Widget;
 using Android.OS;
-using System.Net;
+using Android.Support.V7.App;
+using Android.Gms.Ads;
+using Android;
+using Android.Webkit;
 using System.Net.Sockets;
-using Android.Graphics;
 using System.Threading.Tasks;
+using Android.Graphics;
+
 namespace ITScheduleViewer
 {
     [Activity(Label = "IT Schedule", MainLauncher = true, Theme = "@android:style/Theme.NoTitleBar")]
     public class MainActivity : Activity
     {
         static ProgressBar progressBar;
+        AdView mAdView;
         protected override void OnCreate(Bundle bundle)
         {
-            //base.OnCreate(bundle);
-            //AdView mAdView = FindViewById<AdView>(Resource.Id.adView);
-            //var adRequest = new AdRequest.Builder().Build();
-           
-            //// Start loading the ad.
-            //mAdView.LoadAd(adRequest);
+
             //Set our view from the "main" layout resource
-            RequestWindowFeature(WindowFeatures.NoTitle);
+            base.OnCreate(bundle);
             SetContentView(Resource.Layout.Main);
+
+            mAdView = FindViewById<AdView>(Resource.Id.adView);
+            var adRequest = new AdRequest.Builder().Build();
+            mAdView.LoadAd(adRequest);
+
 
             var webView = FindViewById<WebView>(Resource.Id.webView);
             progressBar = FindViewById<ProgressBar>(Resource.Id.progressBar);

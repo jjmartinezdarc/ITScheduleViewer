@@ -7,6 +7,11 @@ D:\Modified Source Codes\ITScheduleViewer\ITScheduleViewer\obj\Debug\android\ass
 D:\Modified Source Codes\ITScheduleViewer\ITScheduleViewer\obj\Debug\android\assets\System.Web.Services.dll
 D:\Modified Source Codes\ITScheduleViewer\ITScheduleViewer\obj\Debug\android\assets\System.Xml.dll
 D:\Modified Source Codes\ITScheduleViewer\ITScheduleViewer\obj\Debug\android\assets\System.Xml.Linq.dll
+D:\Modified Source Codes\ITScheduleViewer\ITScheduleViewer\obj\Debug\android\assets\Xamarin.Android.Support.v4.dll
+D:\Modified Source Codes\ITScheduleViewer\ITScheduleViewer\obj\Debug\android\assets\Xamarin.Android.Support.v7.AppCompat.dll
+D:\Modified Source Codes\ITScheduleViewer\ITScheduleViewer\obj\Debug\android\assets\Xamarin.GooglePlayServices.Ads.dll
+D:\Modified Source Codes\ITScheduleViewer\ITScheduleViewer\obj\Debug\android\assets\Xamarin.GooglePlayServices.AppIndexing.dll
+D:\Modified Source Codes\ITScheduleViewer\ITScheduleViewer\obj\Debug\android\assets\Xamarin.GooglePlayServices.Basement.dll
 D:\Modified Source Codes\ITScheduleViewer\ITScheduleViewer\obj\Debug\android\assets\System.Threading.dll
 D:\Modified Source Codes\ITScheduleViewer\ITScheduleViewer\obj\Debug\android\assets\System.Runtime.dll
 D:\Modified Source Codes\ITScheduleViewer\ITScheduleViewer\obj\Debug\android\assets\System.ComponentModel.Composition.dll
